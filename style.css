@@ -13,7 +13,6 @@
 .bigimage{
     display: flex;
     align-self: center;
-    border: 20px black;
     width: 500px;
     height: 500px;
     flex-direction: column;
@@ -25,8 +24,13 @@
 }
 
 .square {
-    min-width: 166px;
-    min-height: 166px;
-    background: blue;
+    width: 163px;
+    height: 163px;
     cursor: pointer;
+}
+
+img {
+    width: 166px;
+    height: 166px;
+    margin: 0px;
 }
