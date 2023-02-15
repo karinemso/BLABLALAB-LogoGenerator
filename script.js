@@ -42,6 +42,7 @@ let colorsquare6 = 0
 let colorsquare7 = 0
 let colorsquare8 = 0
 let colorsquare9 = 0
+let random = document.querySelector('#random')
 let img01 = document.querySelector('#img1')
 let img02 = document.querySelector('#img2')
 let img03 = document.querySelector('#img3')
@@ -137,3 +138,19 @@ function change(e){
 squares.forEach(element => {
     element.addEventListener('click', change)
 });
+
+function generate(){
+    indice = parseInt(Math.random * squares.length)
+    img01.src = shapes[parseInt(Math.random() * 29)]
+    img02.src = shapes[parseInt(Math.random() * 29)]
+    img03.src = shapes[parseInt(Math.random() * 29)]
+    img04.src = shapes[parseInt(Math.random() * 29)]
+    img05.src = shapes[parseInt(Math.random() * 29)]
+    img06.src = shapes[parseInt(Math.random() * 29)]
+    img07.src = shapes[parseInt(Math.random() * 29)]
+    img08.src = shapes[parseInt(Math.random() * 29)]
+    img09.src = shapes[parseInt(Math.random() * 29)]
+  
+}
+
+random.addEventListener('click',generate)
