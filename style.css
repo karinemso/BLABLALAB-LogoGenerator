@@ -10,29 +10,27 @@
     height: 85vh;
     justify-content: center;
 }
+
 .bigimage{
     display: flex;
-    align-self: center;
-    width: 500px;
-    height: 500px;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .squarerow{
     display: flex;
+    gap: 15px;
     flex-direction: row;
 }
 
 .square {
-    width: 163px;
-    height: 163px;
+    flex: 1;
     cursor: pointer;
 }
 
-img {
-    width: 166px;
-    height: 166px;
-    margin: 0px;
+.square img {
+    min-height: 100px;
 }
 
 .btn {
@@ -41,7 +39,7 @@ img {
 }
 
 #random {
-    width: 20vw;
+    min-width: 250px;
     height: 10vh;
     font-size: 30px;
     border-radius: 10px;
@@ -51,4 +49,10 @@ img {
 #random:hover  {
     color: white;
     background-color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .square img {
+        min-height: 70px;
+    }
 }
