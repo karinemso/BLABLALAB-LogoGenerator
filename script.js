@@ -93,3 +93,12 @@ function generate(){
 }
 
 random.addEventListener('click',generate)
+
+
+let gestalt = document.querySelector('#gestalt')
+let main = document.querySelector('main')
+
+
+gestalt.addEventListener('click', () => {
+    main.classList.toggle('dark')
+})

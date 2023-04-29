@@ -7,32 +7,38 @@
 
 .container {
     display: flex;
-    height: 85vh;
+    width: 100%;
+    padding-top: 2em;
     justify-content: center;
 }
 .bigimage{
     display: flex;
     align-self: center;
-    width: 500px;
-    height: 500px;
     flex-direction: column;
+    background-color: white;
+    height: 100%;
 }
 
 .squarerow{
     display: flex;
     flex-direction: row;
+    margin-bottom: -4px;
+    margin-top: -1px;
 }
 
 .square {
-    width: 163px;
-    height: 163px;
-    cursor: pointer;
+   flex: 2;
+   width: 100%;
+cursor: pointer;
+margin: 0 -0.7px;
+    
+
 }
 
 img {
-    width: 166px;
-    height: 166px;
-    margin: 0px;
+    width: 100%;
+    object-fit: cover;
+    
 }
 
 .btn {
@@ -41,14 +47,39 @@ img {
 }
 
 #random {
-    width: 20vw;
-    height: 10vh;
-    font-size: 30px;
+
+    font-size: 1.5em;
     border-radius: 10px;
     cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 1em;
 }
 
-#random:hover  {
+#gestalt {
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
     color: white;
+    padding: 1em;
+}
+#random:hover  {
+    background-color: white;
+   color: black;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.dark {
     background-color: black;
 }
